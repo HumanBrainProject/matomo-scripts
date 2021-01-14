@@ -1,7 +1,7 @@
 import json
 import csv
 
-with open('matomo_dump.json', encoding='utf-8') as matomoJson, open('matomo_output.csv', 'w') as output:
+with open('/Users/tsanakts/Desktop/external_users_output.json', encoding='utf-8') as matomoJson, open('/Users/tsanakts/Desktop/external_users_output.csv', 'w') as output:
     data = json.load(matomoJson)
     result = csv.writer(output, delimiter=',',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
